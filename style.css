@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(./Imagenes/fondo.jpg);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+}
+.textoPricipales{
+    color:darkslateblue;
+    text-align: center;
+}
+
+.textoSecundarios{
+    grid-column: 1/5; 
+    color: blue;
+    text-align: center;
+    margin: 50px;
+}
+
+.textosLista{
+    grid-column: 1/5;
+    color:darkblue;
+    text-align: center;
+}
+
+.ubicacion{
+    color: blue;
+    text-align: center;
+    margin: 50px;
+}
+
+.textoParrafo{
+    color: green;
+}
+h1{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.listaEncabezado{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items:center;
+}
+
+.listaEncabezado .lista{
+    display: flex;
+    text-decoration: none;
+}
+
+.header div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.bienvenida{
+    grid-column: 1/5;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.header div .logoHeader{
+    width: 100px;
+    height: 100px;
+}
+
+.logoHeader{
+    object-fit: cover;
+}
+
+.socialMedia{
+    width: 50px;
+}
+
+.listaMedia{
+    margin: auto;
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.listaRedes{
+    display: flex;
+    flex-direction: row;
+    justify-content:center
+    /* align-items: center; */
+}
+
+.srviciosUno{
+    display: inline-block;
+    margin: 0px 100px;
+}
+
+.srviciosDos{
+    display: inline-block;
+    margin: 100px 100px;
+}
+
+
+.srviciosTres{
+    display: inline-block;
+    margin: 0px 100px;
+}
+
+.direccion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.galeria{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.galeria__card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.galeria__card img{
+    width: 200px;
+    height: 200px;
+}
+
+.invertido{
+    align-self: flex-end;
+    flex-direction: row-reverse;
+}
+
+.formulario{
+    width: 600px;
+    padding: 30px;
+    margin: auto;
+    justify-content: space-evenly;
+}
+
+.controls{
+    width: 35%;
+    align-items:baseline;
+}
+
+.coment{
+    width: 100%;
+    height: 300px;
+}
+
+.galeria__cabecera{
+    width: 300;
+}
+.galeria__noticias{
+    width: 600px;
+}
+
+@media screen and (max-width: 768px){
+    .listaEncabezado{
+        flex-wrap: nowrap;
+    }
+    .srviciosUno{
+        margin: 0px 100px 20px;
+    }
+    
+    .srviciosDos{
+        margin: 0px 100px 20px;
+    }
+    
+    .srviciosTres{
+        margin: 0px 100px 20px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .listaEncabezado{
+        flex-direction: column;
+    }
+    iframe{
+        width: 250px;
+        height: 200px;
+    }
+    h1{
+        font-size: medium;
+    }
+    h2{
+        font-size: medium;
+    }
+    .srviciosUno{
+        margin: 0px 20px;
+    }
+    
+    .srviciosDos{
+        margin: 0px 20px;
+    }
+    
+    .srviciosTres{
+        margin: 0px 20px;
+    }
+    .direccion{
+        display: flex;
+        flex-direction: column;
+    }
+    .socialMedia{
+        width: 30px;
+        margin: 20px 0px 0px;
+    }
+
+    .galeria__card{
+        flex-direction: column;
+        padding: 30px;
+    }
+}
+
+body{
+    display: grid;
+    grid-template-areas:
+        'header'
+        'main'
+        'footer';
+}
+
+.header{
+    grid-area: header;
+}
+.main{
+    grid-area: main;
+}
+
+.footer{
+    grid-area: footer;
+}
+
+.nosotrosDes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.textoPricipales{
+    grid-column: 1/4;
+}
+ 
+.descripcion{
+    grid-column: 1/1;
+}
+
+img .fotoAbogados{
+    grid-column: 2/4;
+    justify-content: center;
+}
+
+.fotoAbogado1{
+    grid-row: 2/3;
+    grid-column: 1/2;
+    
+}
+
+/* .main .nosotrosDes section{
+    display: flex;
+} */
