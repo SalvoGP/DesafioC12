@@ -22,12 +22,6 @@ body{
     margin: 50px;
 }
 
-.textosLista{
-    grid-column: 1/5;
-    color:darkblue;
-    text-align: center;
-}
-
 .ubicacion{
     color: blue;
     text-align: center;
@@ -39,20 +33,6 @@ body{
 }
 h1{
     font-family:Georgia, 'Times New Roman', Times, serif;
-}
-
-.listaEncabezado{
-    width: 100%;
-    height: 100px;
-    display: flex;
-    flex-direction: row;
-    justify-content:space-evenly;
-    align-items:center;
-}
-
-.listaEncabezado .lista{
-    display: flex;
-    text-decoration: none;
 }
 
 .header div{
@@ -167,9 +147,6 @@ h1{
 }
 
 @media screen and (max-width: 768px){
-    .listaEncabezado{
-        flex-wrap: nowrap;
-    }
     .srviciosUno{
         margin: 0px 100px 20px;
     }
@@ -184,9 +161,6 @@ h1{
 }
 
 @media screen and (max-width: 320px){
-    .listaEncabezado{
-        flex-direction: column;
-    }
     iframe{
         width: 250px;
         height: 200px;
@@ -266,6 +240,21 @@ img .fotoAbogados{
     
 }
 
-/* .main .nosotrosDes section{
-    display: flex;
-} */
+.barraNav{
+    background-color: burlywood;
+}
+
+.nav-link:hover{
+    background-color: rgb(236, 235, 233);
+}
+
+.barraNav{
+    display: block;
+    justify-content:space-evenly;
+}
+
+.container .col-md-3{
+    padding: 30px;
+    color:darkblue;
+    text-align: center;
+}
